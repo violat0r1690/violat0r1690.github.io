@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 :root {
     --font-reg-blue: rgba(21,169,241,1);
@@ -33,6 +33,11 @@ p{
   color: var(--font-reg-blue);
 }
 
+.ws-nav-links a{
+    text-decoration: none;
+    color: var(--font-reg-blue);
+}
+
 .ws-nav-links ul{
   width: 100%;
   display:flex;
@@ -44,7 +49,7 @@ p{
     font-size: 16px;
 }
 
-.ws-navigation ul li:hover{
+.ws-navigation a:hover{
     color: var(--font-strong-blue);
     cursor: pointer;
 }
@@ -176,4 +181,73 @@ h2{
 
   .ws-hero-quote h2{
       color: rgba(249,249,249,1)
+  }
+
+  /*Contact Form*/
+
+  .ws-contact-container{
+      background-color:rbga(249,249,249,1);
+      height: 683px;
+  }
+
+  .ws-contact{
+      display: flex;
+      justify-content: space-around;
+  }
+  
+
+
+  .ws-contact-info{
+    width:480px;
+    margin-top: 204px;
+  }
+
+  .ws-contact-form{
+    width: 600px;
+    height: 503px;
+    margin-top: 90px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  form{
+      display: flex;
+  }
+
+  .ws-footer-container{
+    height: 334px;
+    width: auto;
+    background: #033C87;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .ws-footer-logo{
+      background-image: url("/src/ws-footer-logo.svg");
+      width:200px;
+      height: 59px;
+      background-repeat: no-repeat;
+  }
+
+  .ws-footer-links a{
+      text-decoration: none;
+      color:rgba(249,249,249,1);
+      font-weight: 200;
+      margin-right: 40px;
+  }
+
+  .ws-footer-socialmedia a{
+    margin-right: 20px;
+  }
+
+  .ws-footer-copyrights{
+    border-top: 1px solid #FFFFFF;
+  }
+  .ws-footer-copyrights p{
+      color:white !important;
+      opacity:initial;
+      font-weight: 200;
   }

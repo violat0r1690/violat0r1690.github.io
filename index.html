@@ -7,7 +7,6 @@
     <link rel="icon" type="image/svg+xml" href="/src/ws-favicon-logo.svg">
     <link rel="stylesheet" href="/styles.css">
     <title>WINDSERVICE</title>
-    <script src="/script.js"></script>
 </head>
 
 <body>
@@ -22,10 +21,10 @@
                     </div>
                     <div class="ws-nav-links">
                         <ul>
-                            <li>STRONA GŁÓWNA</li>
-                            <li>SERWIS I KONSERWACJA</li>
-                            <li>MODERNIZACJA</li>
-                            <li>KONTAKT</li>
+                            <a href="#contact">STRONA GŁÓWNA</a>
+                            <a href="#dialog">SERWIS I KONSERWACJA</a>
+                            <a href="#elevator">MODERNIZACJA</a>
+                            <a href="#contact">KONTAKT</a>
                         </ul>
                     </div>
                 </div>
@@ -45,7 +44,7 @@
             </div>
         </div>
         <!-- Dialog Boxes  -->
-        <div class="ws-dialog-box-container">
+        <div class="ws-dialog-box-container" id="dialog">
             <div class="ws-dialog-box">
                 <img src="/src/ws-dialog-box-elevator.svg">
                 <h3>Donec rutrum</h3>
@@ -68,18 +67,20 @@
             </div>
         </div>
         <!-- Elevator Section  -->
-        <div class="ws-elevator-container">
+        <div class="ws-elevator-container" id="elevator">
             <div class="ws-elevator-picture">
-               
+
             </div>
             <div class="ws-elevatior-discription">
                 <h2>
                     Nullam ac commodo
                 </h2>
                 <p>
-                    Nulla euismod tellus non diam imperdiet rutrum. Integer posuere orci nisl, sit amet feugiat mi  finibus non. Tincidunt tincidunt eros. Etiam ut molestie vulputate lectus. <br><br>
+                    Nulla euismod tellus non diam imperdiet rutrum. Integer posuere orci nisl, sit amet feugiat mi
+                    finibus non. Tincidunt tincidunt eros. Etiam ut molestie vulputate lectus. <br><br>
 
-                    Cras dictum congue turpis, et ornare lorem gravida et. Ut placerat finibus pretium. Fusce pharetra leo mi, a sodales odio vulputate sit amet. Cras commodo arcu nec nunc.
+                    Cras dictum congue turpis, et ornare lorem gravida et. Ut placerat finibus pretium. Fusce pharetra
+                    leo mi, a sodales odio vulputate sit amet. Cras commodo arcu nec nunc.
                 </p>
             </div>
         </div>
@@ -92,7 +93,64 @@
                 </h2>
             </div>
         </div>
-    </div>
-</body>
+        <!-- Contact Form -->
+        <div class="ws-contact-container">
+            <div class="ws-contact">
+                <div class="ws-contact-info">
+                    <h2>
+                        Contact Info
+                    </h2>
+                    <p>
+                        Nulla euismod tellus non diam imperdiet rutrum. Integer posuere orci nisl, sit amet feugiat mi
+                        finibus non. Tincidunt tincidunt eros.
+                    </p>
+                    <div class="ws-contact-info-details">
+                        <p>
+                            Telefon: +48 123 456 789
+                        </p>
+                        <p>
+                            Email:<a href="mailto:someone@yoursite.com">someone@yoursite.com</a>
+                        </p>
+                        <p>
+                            Fax:+48 123 456 789
+                        </p>
+                    </div>
+                </div>
+                <div class="ws-contact-form" id="contact">
+                    <!-- <form>
+                        <div class="test">
+                        <input type="text" id="YourName" name="Your Name" placeholder="Imię i Nazwisko">
+                        <input type="email" id="YourEmail" name="Your Email" placeholder="Email">
+                        </div>
+                        <div class="test1">
+                        <input type="text" id="YourTitle" name="Your Title" placeholder="Twój Tytuł">
+                        </div>
+                        <div class="test2">
+                        <input type="text" id="YourQuestion" name="Your Question" placeholder="Twoje Pytanie">
+                        </div>
+                      </form>  -->
+                </div>
+            </div>
+        </div>
+        <div class="ws-footer-container" name="footer">
+            <div class="ws-footer-logo">
 
+            </div>
+            <div class="ws-footer-links">
+                <a href="#">STRONA GŁÓWNA</a>
+                <a href="#">SERWIS I KONSERWACJA</a>
+                <a href="#">MODERNIZACJA</a>
+                <a href="#">KONTAKT</a>
+            </div>
+            <div class="ws-footer-socialmedia">
+                <a href="#"><img src="/src/ws-logo-instagram.svg" ></a>
+                <a href="#"><img src="/src/ws-logo-linkedin.svg" ></a>
+                <a href="#"><img src="/src/ws-footer-twitter.svg"></a>
+            </div>
+            <div class="ws-footer-copyrights">
+               <p>ALL RIGHTS RESERVED. COPYRIGHT © <span id="year"></span></p>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
 </html>
