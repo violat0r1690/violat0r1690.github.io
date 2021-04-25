@@ -75,7 +75,7 @@ p{
 }
 
 .ws-header-image{
-    background-image: url("/windservice/src/ws-banner-img.png");
+    background-image: url("/src/ws-banner-img.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -161,7 +161,7 @@ h3{
 }
 
 .ws-elevator-picture{
-    background-image: url("/windservice/src/ws-elevator-front.png");
+    background-image: url("/src/ws-elevator-front.png");
     width: 416px;
     height: 528px;
     mix-blend-mode: darken;
@@ -179,7 +179,7 @@ h2{
 
 .ws-hero{
     position: relative;
-    background-image: url('/windservice/src/ws-hero-img.jpg');
+    background-image: url('/src/ws-hero-img.jpg');
     background-repeat: no-repeat;
 }
 
@@ -246,7 +246,7 @@ h2{
   }
 
   .ws-footer-logo{
-      background-image: url("/windservice/src/ws-footer-logo.svg");
+      background-image: url("/src/ws-footer-logo.svg");
       width:200px;
       height: 59px;
       background-repeat: no-repeat;
@@ -323,7 +323,7 @@ h2{
 
 @media (max-width: 768px){
     .ws-header-image{
-        background-image: url("/windservice/src/ws-banner-mobile.png");
+        background-image: url("/src/ws-banner-mobile.png");
         background-repeat: no-repeat;
         background-size: cover;
         opacity: 0.87;
