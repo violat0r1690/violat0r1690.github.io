@@ -54,6 +54,20 @@ p{
     cursor: pointer;
 }
 
+/*Navigation Mobile Css*/
+.ws-navigation-mobile{
+    display: none;
+}
+
+@media (max-width: 1140px){
+    .ws-navigation-mobile{
+        display: block;
+    }
+    .ws-navigation{
+        display:none
+    }
+}
+
 /*Header Styles*/
 
 .ws-header{
@@ -61,7 +75,7 @@ p{
 }
 
 .ws-header-image{
-    background-image: url("/src/ws-banner-img.png");
+    background-image: url("/windservice/src/ws-banner-img.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -106,8 +120,9 @@ color: var(--font-strong-blue);
 /* Dialog Boxes*/
 
 .ws-dialog-box-container{
-    display: flex;
+    display: grid;
     justify-content: space-around;
+    grid-template-columns: repeat(4, auto);
 }
 
 
@@ -146,7 +161,7 @@ h3{
 }
 
 .ws-elevator-picture{
-    background-image: url("/src/ws-elevator-front.png");
+    background-image: url("/windservice/src/ws-elevator-front.png");
     width: 416px;
     height: 528px;
     mix-blend-mode: darken;
@@ -164,6 +179,8 @@ h2{
 
 .ws-hero{
     position: relative;
+    background-image: url('/windservice/src/ws-hero-img.jpg');
+    background-repeat: no-repeat;
 }
 
 .ws-hero img{
@@ -177,6 +194,9 @@ h2{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .ws-hero-mobile{
+      display: none;
   }
 
   .ws-hero-quote h2{
@@ -226,7 +246,7 @@ h2{
   }
 
   .ws-footer-logo{
-      background-image: url("/src/ws-footer-logo.svg");
+      background-image: url("/windservice/src/ws-footer-logo.svg");
       width:200px;
       height: 59px;
       background-repeat: no-repeat;
@@ -251,3 +271,102 @@ h2{
       opacity:initial;
       font-weight: 200;
   }
+
+/*Media Queries*/
+
+  @media (max-width: 1140px){
+    .ws-navigation-mobile{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    .ws-navigation{
+        display:none
+    }
+    .ws-nav-logo {
+        margin: 0px;
+    }
+
+    .ws-nav-logo img{
+        margin: 10px 20px;
+    }
+    .ws-nav-links {
+        margin: 30px;
+        color: var(--font-reg-blue);
+    }
+    .ws-dialog-box-container{
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-around;
+    }
+    .ws-elevator-container{
+    flex-direction: column;
+     height: 948px;
+    }
+    .ws-elevator-picture{
+        margin: 0px;
+        order: 2;
+    }
+    .ws-contact-container{
+        height: 925px;
+    }
+    .ws-contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ws-contact-info{
+        margin: 0px;
+    }
+    .ws-footer-links a{
+        margin: 0px;
+    }
+}
+
+@media (max-width: 768px){
+    .ws-header-image{
+        background-image: url("/windservice/src/ws-banner-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.87;
+        height: 1010px;
+    }
+    .ws-dialog-box-container{
+        grid-template-columns: repeat(1, auto);
+    }
+    .ws-hero-desktop{
+        display: none;
+    }
+    .ws-hero-mobile{
+        display: block;
+    }
+    .ws-hero-quote{
+        width: 80%;
+    }
+    .ws-contact-info{
+        width: 295px;
+    }
+    .ws-contact-form{
+        width: 320px; 
+    }
+    .ws-header-title-dicription{
+        font-size: 32px;
+    }
+    .ws-header-discription {
+        left:0px;
+        top: 640px;
+        width: 80%;
+        margin-left: 60px;
+    }
+    .ws-elevatior-discription{
+        width: 80%;
+    }
+
+    .ws-footer-links{
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    }
+    .ws-elevator-picture {
+        width: 360px;
+    }
+
+}
