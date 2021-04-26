@@ -2,7 +2,8 @@
 
 function showNavigation(){
   let showHamburger = document.getElementById('hamburger')
-  showHamburger.style.display = 'none'
+  showHamburger.style.display = 'none';
+  console.log('Hello World!')
 }
 
 
