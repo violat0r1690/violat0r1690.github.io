@@ -211,7 +211,7 @@ h2{
 
   .ws-contact-container{
       background-color:rbga(249,249,249,1);
-      height: 683px;
+      height: 350px;
   }
 
   .ws-contact{
@@ -223,15 +223,18 @@ h2{
 
   .ws-contact-info{
     width:480px;
-    margin-top: 204px;
+    margin-top: 50px;
   }
 
   .ws-contact-form{
     width: 600px;
-    height: 503px;
-    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 503px; */
+    /* margin-top: 90px;
     background: #FFFFFF;
-    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.1); */
   }
 
   form{
@@ -276,6 +279,11 @@ h2{
       font-weight: 200;
   }
 
+  .contact-picture{
+    width: 60%;
+    height: 30%;
+  }
+
 /*Media Queries*/
 
   @media (max-width: 1140px){
@@ -304,21 +312,25 @@ h2{
     }
     .ws-elevator-container{
     flex-direction: column;
-     height: 948px;
+     height: 1050px;
     }
     .ws-elevator-picture{
         margin: 0px;
         order: 2;
     }
     .ws-contact-container{
-        height: 925px;
+        height: 500px;
     }
     .ws-contact{
         flex-direction: column;
         align-items: center;
     }
     .ws-contact-info{
-        margin: 0px;
+        margin: 5px;
+    }
+    .contact-picture {
+        width: 60%;
+        height: 50%;
     }
     .ws-footer-links a{
         margin: 0px;
@@ -345,11 +357,19 @@ h2{
     .ws-hero-quote{
         width: 80%;
     }
+    .ws-hero-quote h2{
+        font-size:16px
+    }
     .ws-contact-info{
         width: 295px;
     }
     .ws-contact-form{
-        width: 320px; 
+        width: 0px;
+        width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     }
     .ws-header-title-dicription{
         font-size: 32px;
