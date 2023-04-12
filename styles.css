@@ -281,7 +281,7 @@ h2{
 
   .contact-picture{
     width: 60%;
-    height: 30%;
+    height: 55%;
   }
 
 /*Media Queries*/
@@ -330,10 +330,13 @@ h2{
     }
     .contact-picture {
         width: 60%;
-        height: 50%;
+        height: 55%;
     }
     .ws-footer-links a{
         margin: 0px;
+    }
+    .ws-hero-quote h2{
+        font-size:16px
     }
 }
 
